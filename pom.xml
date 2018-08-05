@@ -90,6 +90,38 @@
       <version>1.3.3</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.7</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.11</version>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/org.jbpm/jbpm-flow -->
+    <!--<dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-flow</artifactId>
+      <version>7.9.0.Final</version>
+    </dependency>-->
+      <!-- https://mvnrepository.com/artifact/org.activiti/activiti-engine -->
+    <!-- https://mvnrepository.com/artifact/org.activiti/activiti-engine -->
+    <dependency>
+      <groupId>org.activiti</groupId>
+      <artifactId>activiti-engine</artifactId>
+      <version>5.22.0</version>
+    </dependency>
+
+
+
+
+
 
 
 
