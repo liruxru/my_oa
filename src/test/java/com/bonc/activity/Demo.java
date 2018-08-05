@@ -9,6 +9,8 @@ public class Demo {
      */
     @Test
     public void  test(){
+        // will initialize and build a process engine the first time it is
+        // called and afterwards always return the same process engine.
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         System.out.println(processEngine);
     }
