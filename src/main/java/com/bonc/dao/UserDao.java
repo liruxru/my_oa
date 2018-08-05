@@ -1,4 +1,6 @@
 package com.bonc.dao;
 
-public class UserDao {
+import com.bonc.entity.User;
+
+public interface UserDao extends  BaseDao<User> {
 }
