@@ -2,6 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <!-- activiti 工作流配置文件-->
 
     <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
 
@@ -10,7 +11,10 @@
         <property name="jdbcUsername" value="root" />
         <property name="jdbcPassword" value="admin" />
 
+        <!--生成数据库文件-->
         <property name="databaseSchemaUpdate" value="true" />
+        <!--解析xml bpm 时，是否生成图片-->
+        <property name ="createDiagramOnDeploy" value ="false" />
 
         <property name="jobExecutorActivate" value="false" />
         <property name="asyncExecutorEnabled" value="true" />

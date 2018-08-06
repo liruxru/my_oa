@@ -11,7 +11,14 @@
 		<context:exclude-filter type="annotation" 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
 
-
+	<!--在此处引入 配置文件idea不会警告，实际上并无影响-->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations"> <!-- PropertyPlaceholderConfigurer类中有个locations属性，接收的是一个数组，即我们可以在下面配好多个properties文件 -->
+			<array>
+				<value>classpath:jdbc.properties</value>
+			</array>
+		</property>
+	</bean>
 	<import resource="classpath:spring-hibernate.xml"/>
 	
 </beans>
