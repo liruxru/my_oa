@@ -1,0 +1,13 @@
+<definitions
+        xmlns ="http://www.omg.org/spec/BPMN/20100524/MODEL"
+        xmlns:activiti ="http://activiti.org/bpmn"
+        targetNamespace ="Examples" >
+<process id="myId" name="myName">
+   <!-- BPMN 2.0 根节点是definitions 节点。这个元素中，可以定义多个流程定义（不过我们建议每个文
+    件只包含一个流程定义， 可以简化开发过程中的维护难度）。一个空的流程定义看起来像下面这样。注
+    意， definitions 元素最少也要包含xmlns 和targetNamespace 的声明。
+    targetNamespace 可以是任意值，它用来对流程实例进行分类。-->
+</process>
+
+
+</definitions>
